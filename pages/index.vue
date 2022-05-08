@@ -1,12 +1,16 @@
 <template>
 <div>
   <Header></Header>
+  <LoginPopup></LoginPopup>
 </div>
 </template>
 
 <script>
+import 'tw-elements'
+import LoginPopup from "~/components/LoginPopup.vue";
 export default {
-  name: 'IndexPage'
+    name: "IndexPage",
+    components: { LoginPopup }
 }
 </script>
 

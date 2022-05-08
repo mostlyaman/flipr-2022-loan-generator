@@ -53,10 +53,13 @@ export default {
           messagingSenderId: "623384353383",
           appId: "1:623384353383:web:a3ddb0f8a023c97f6812c2"
         },
-        services: {
-          onAuthStateChangedMutation: 'ON_AUTH_STATE_CHANGED_MUTATION',
-          onAuthStateChangedAction: 'onAuthStateChangedAction',
-        },
+        services:{
+          auth: {
+            onAuthStateChangedMutation: 'ON_AUTH_STATE_CHANGED_MUTATION',
+            onAuthStateChangedAction: 'onAuthStateChangedAction',
+          },
+        }
+
       }
     ]
   ],

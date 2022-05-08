@@ -1,16 +1,15 @@
 <template>
-  <div class="navigation border-b-2 my-2 flex" >
+  <div class="navigation border-b-2 flex pt-2 border-black " >
     <nav class="container ml-10 mb-2 flex h-12 items-center">
       <img class = "h-full" src="../assets/images/logo.png" alt="Logo">
-      <h1 class = "ml-16 mr-8">Home</h1>
-      <h1 class = "mr-8">Our Features</h1>
-      <h1 class = "mr-8">FAQ</h1>
-      <h1 class = "mr-8">Contact Us</h1>
-      <h1 class = "mr-8">About</h1>
+      <button class = "ml-16 mr-8">Home</button>
+      <button class = "mr-8">Our Features</button>
+      <button class = "mr-8">FAQ</button>
+      <button class = "mr-8">Contact Us</button>
+      <button class = "mr-8">About</button>
     </nav>
-    <nav class=" mx-4 login justify-self-end h-12 flex items-center">
-        <h1 class = "mr-8">Register</h1>
-        <h1 class = "mr-16">Login</h1>
+    <nav class="ml-16 login justify-self-end h-12 flex items-center">
+        <button type="button" class = "mx-16" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">Login</button>
     </nav>
   </div>
 </template>
@@ -21,17 +20,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .navigation{
   font-family: Poppins, sans-serif;
   font-weight: 500;
   color: black;
 }
-h1{
+button{
     padding: 5px;
     padding-inline: 10px;
 }
-h1:hover{
+button:hover{
     background-color: black;
     color: white;
     border:2;
