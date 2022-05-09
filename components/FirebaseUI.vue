@@ -1,7 +1,9 @@
 <template>
+
     <div id = "firebase-ui-buttons">
-        
+
     </div>
+
 </template>
 
 <script>
@@ -22,7 +24,6 @@ export default {
             callbacks: {
                 signInSuccessWithAuthResult(){
                     console.log("Successfully Signed in...");
-                    window.location = "/profile"
                 }
             } 
         }
