@@ -1,11 +1,10 @@
 <template>
     <div class="profile">
-        Hello World!
+        {{ $store.state.user }}
     </div>
 </template>
 
 <script>
 export default {
-    middleware: "auth"
 }
 </script>

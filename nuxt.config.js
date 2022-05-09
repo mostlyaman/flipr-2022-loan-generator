@@ -55,8 +55,9 @@ export default {
         },
         services:{
           auth: {
-            onAuthStateChangedMutation: 'ON_AUTH_STATE_CHANGED_MUTATION',
-            onAuthStateChangedAction: 'onAuthStateChangedAction',
+            initialize: {
+              onAuthStateChangedMutation: 'ON_AUTH_STATE_CHANGED_MUTATION',
+            },
           },
         }
 

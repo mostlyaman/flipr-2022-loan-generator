@@ -10,7 +10,8 @@ import 'tw-elements'
 import LoginPopup from "~/components/LoginPopup.vue";
 export default {
     name: "IndexPage",
-    components: { LoginPopup }
+    components: { LoginPopup },
+
 }
 </script>
 

@@ -22,7 +22,7 @@ export default {
             callbacks: {
                 signInSuccessWithAuthResult(){
                     console.log("Successfully Signed in...");
-                    window.location = "/";
+                    window.location = "/profile"
                 }
             } 
         }
