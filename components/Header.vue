@@ -8,16 +8,25 @@
       <button class = "mr-8">Contact Us</button>
       <button class = "mr-8">About</button>
     </nav>
-    <nav class="ml-16 login justify-self-end h-12 flex items-center">
+    <nav class="ml-16 login mb-2 justify-self-end h-12 flex items-center">
         <button v-if = "!$store.state.user" type="button" class = "mx-16" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">Login</button>
-        <NuxtLink class = "button" v-else to= "/profile" >Profile</NuxtLink>
+        <div v-else class = "flex items-center">
+          <NuxtLink class = "button ml-8" to= "/profile" >Profile</NuxtLink>
+          <button class = "ml-8 mr-16 button" @click="signout">Sign Out</button>
+        </div>
     </nav>
   </div>
 </template>
 
 <script>
 export default {
-    name: "Header", 
+    name: "Header",
+    methods: {
+      signout(){
+        this.$fire.auth.signOut();
+        this.$router.push('/');
+      }
+    }
 }
 </script>
 
@@ -40,6 +49,7 @@ button:hover{
 .button{
     padding: 5px;
     padding-inline: 10px;
+    white-space: nowrap;
 }
 .button:hover{
     background-color: black;
